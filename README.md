@@ -1,9 +1,21 @@
-# hump Dumper
+# HUMP
 
-Local dump-tool.
+Local non-breaking dump-tool.
+
+### Usage
+Install client in your project and use.
+```php
+# Named dump 
+hump(<name>,<item>);
+
+#anonymous dump
+hump(<item>);
+
+```
+
 
 ### Extra
-Adds trace and all globals to the dump.
+Adds trace and all globals to each dump.
 
 ### Docker-support
 Sure, just make sure to add the following extra_hosts to your `docker-compose.yml`:
