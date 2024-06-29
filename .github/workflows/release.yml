@@ -27,7 +27,7 @@ jobs:
             const { data } = await github.rest.repos.createRelease({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              tag_name: `app-v${process.env.PACKAGE_VERSION}`,
+              tag_name: `hump-v${process.env.PACKAGE_VERSION}`,
               name: `HUMP v${process.env.PACKAGE_VERSION}`,
               body: 'Fantastic Magnificent, splendid! The mighty HUMP.',
               draft: true,
