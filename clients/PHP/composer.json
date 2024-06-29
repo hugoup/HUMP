@@ -6,7 +6,10 @@
   "autoload": {
     "psr-4": {
       "Hewgo\\": "src/"
-    }
+    },
+    "files": [
+      "helper.php"
+    ]
   },
   "authors": [
     {
