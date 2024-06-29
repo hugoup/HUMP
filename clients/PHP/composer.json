@@ -1,0 +1,17 @@
+{
+  "name": "hewgo/hump",
+  "require": {
+    "symfony/var-dumper": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hewgo\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "hugoup",
+      "email": "stefan@unitedprofile.se"
+    }
+  ]
+}

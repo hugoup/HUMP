@@ -1,0 +1,87 @@
+{
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "beforeBuildCommand": "pnpm build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist",
+    "withGlobalTauri": false
+  },
+  "package": {
+    "productName": "hump",
+    "version": "0.0.1"
+  },
+  "tauri": {
+    "updater": {
+      "active": true,
+      "endpoints": [
+        "https://hump.dalahest.se/{{target}}/{{arch}}/{{current_version}}"
+      ],
+      "dialog": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEFCM0ZDMTQzNkU3ODZCQ0YKUldUUGEzaHVROEUvcTZtZHB6WWJwdkM3bGlNQ3ppRGp3eXBjdHhwQkdpTDBDS1FDYWFNbHZLOGoK"
+    },
+    "allowlist": {
+      "all": false,
+      "fs": {
+        "scope": ["$APPDATA/*"],
+        "all": true
+      },
+      "window": {
+        "all": true
+      },
+      "dialog": {
+        "all": true,
+        "ask": true,
+        "confirm": true,
+        "message": true,
+        "open": true,
+        "save": true
+      },
+      "shell": {
+        "all": true,
+        "execute": true,
+        "sidecar": true,
+        "open": true,
+        "scope": [
+          {
+            "name": "docker",
+            "cmd": "docker",
+            "args": true
+          },
+          {
+            "name": "docker-compose",
+            "cmd": "docker-compose",
+            "args": true
+          },
+          {
+            "name": "ls",
+            "cmd": "ls",
+            "args": true
+          },
+          {
+            "name": "sh",
+            "cmd": "sh",
+            "args": true
+          }
+        ]
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "se.dalahest.hump",
+      "icon": ["icons/hump.ico", "icons/hump.png"]
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "HUMP",
+        "width": 800,
+        "height": 600
+      }
+    ]
+  }
+}

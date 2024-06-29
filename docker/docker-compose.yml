@@ -1,0 +1,9 @@
+services:
+  php:
+    image: php:8.2-apache
+    ports:
+      - 80:80
+    volumes:
+      - ../clients/PHP/:/var/www/html/
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

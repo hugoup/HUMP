@@ -1,0 +1,28 @@
+{
+  "name": "hump",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.4.0",
+    "pinia": "^2.1.6",
+    "tauri-plugin-window-state-api": "github:tauri-apps/tauri-plugin-window-state#v1",
+    "unplugin-vue-components": "^0.25.2",
+    "vue": "^3.3.4",
+    "vue-json-pretty": "^2.4.0"
+  },
+  "devDependencies": {
+    "@iconify-json/mdi": "^1.1.54",
+    "@tauri-apps/cli": "^1.4.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "sass": "^1.68.0",
+    "unplugin-icons": "^0.17.0",
+    "vite": "^4.4.4"
+  }
+}
